@@ -58,3 +58,66 @@ Authentication is the process of verifying the identity of a user to make sure t
 
 **Expired Token = Login Again = New Token**
 
+
+## Morgan (Logger Middleware)
+
+- **Logger:** Application ki activities aur requests ka record rakhna.
+- **Morgan:** Express.js ka third-party logging middleware.
+- **Purpose:** HTTP requests ki information terminal par display karna.
+- **Installation:** `npm install morgan`
+
+## Morgan Predefined Formats
+
+Morgan middleware ke different predefined formats (modes) hote hain. Inhein use karke hum decide karte hain ke terminal mein HTTP request ki information kis format mein display hogi.
+
+
+Morgan provides five predefined logging formats:
+
+1. **combined:** Displays detailed request information, including IP address, date, method, URL, status code, response size, referrer and user-agent.
+
+2. **common:** Displays request information similar to combined but excludes referrer and user-agent.
+
+3. **dev:** Displays request information in a concise and colorful format. Mainly used during development.
+
+4. **short:** Displays request information in a shorter format, including IP address, method, URL, status code and response time.
+
+5. **tiny:** Displays minimum request information, including method, URL, status code, response size and response time.
+
+### Example
+
+`app.use(morgan('dev'));`
+
+**Remember:** Morgan formats decide how HTTP request logs are displayed in the terminal.
+
+## npx vs npm run
+
+### 1. npx
+- Used to run a locally installed package directly from the terminal.
+- Example:
+
+```bash
+npx nodemon server.js
+```
+
+### 2. npm run
+- Used to execute commands written inside the `scripts` section of `package.json`.
+- Example:
+
+```json
+"scripts": {
+  "dev": "nodemon server.js"
+}
+```
+
+Run the script using:
+
+```bash
+npm run dev
+```
+
+### Why is `npx` not required in package.json?
+
+`npm run` automatically searches for locally installed packages inside `node_modules/.bin` and executes them. Therefore, we don't need to write `npx` in the script.
+
+**Note:** Both commands can run Nodemon.
+

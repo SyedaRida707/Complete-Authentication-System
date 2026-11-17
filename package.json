@@ -1,0 +1,27 @@
+{
+  "name": "complete-authentication-system",
+  "version": "1.0.0",
+  "description": "Authentication is the process of verifying the identity of a user to make sure they are who they claim to be.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyedaRida707/Complete-Authentication-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyedaRida707/Complete-Authentication-System/issues"
+  },
+  "homepage": "https://github.com/SyedaRida707/Complete-Authentication-System#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongoose": "^9.12.2",
+    "morgan": "^1.12.1"
+  }
+}
