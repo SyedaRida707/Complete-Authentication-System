@@ -12,27 +12,30 @@ Authentication is the process of verifying the identity of a user to make sure t
 3. Facebook checks your credentials.
 4. If correct → Login successful.
 5. If incorrect → Login rejected.
+
 **This process is called Authentication.**
 
 # How Authentication System Works?
 
-1. **User Registration:** First, the user registers on the application by providing their details.
+1. Sab se pehle user application par register karta hai. Jab tak user register nahi karega, hum usay application ke kuch features, jaise comment aur like karne ki permission nahi denge.
 
-2. **Data Storage:** The server receives the user's details and saves them in the database.
+2. User apni details server ko bhejta hai. Server un details ko database mein save kar leta hai.
 
-3. **User ID:** When the user's record is saved in the database, the user gets a unique ID.
+3. Database mein user ka record save hone ke baad us user ko ek unique ID milti hai.
 
-4. **Token Generation:** The server creates a token using the user's ID. The token contains information related to the user's identity.
+4. Server us ID ko use karke ek token create karta hai. Is token mein user ki pehchan se related data hota hai, jaise uski ID.
 
-5. **Token Response:** The server sends the generated token back to the user in the response.
+5. Server token create karne ke baad response mein woh token user ko bhej deta hai.
 
-6. **Sending Requests:** Whenever the user sends a protected request to the server, the user also sends the token with that request.
+6. Ab jab bhi user server ko koi request bhejta hai, toh woh request ke saath apna token bhi bhejta hai.
 
-7. **Token Verification:** The server receives the token and verifies it to check whether it is valid.
+7. Chahe user 10 requests bheje, 1000 ya 100,000 requests bheje, wohi token har protected request ke saath bhej sakta hai, jab tak token valid hai.
 
-8. **User Identification:** The server reads the user's ID from the token and identifies which user is sending the request.
+8. Ab server ko pehle request bhejne wale user ki pehchan nahi hoti thi, lekin ab request ke saath token aa raha hai.
 
-9. **Access:** After successful authentication, the server allows the user to access the requested protected feature.
+9. Server us token ko check aur verify karta hai. Token mein user ki ID hoti hai, toh server samajh jata hai ke yeh request kis user ki hai.
+
+10. Is tarah server user ko identify kar leta hai aur samajh jata hai ke request kis user ki taraf se aayi hai.
 
 ## Remember
 
