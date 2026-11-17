@@ -4,6 +4,7 @@ Authentication is the process of verifying the identity of a user to make sure t
 **Easy Meaning: Authentication ka matlab hai user ki identity (pehchaan) verify karna.**
 
 **Remember: Authentication = Who are you?**
+
 *Real-Life Example*
 - Suppose you want to log in to Facebook:
 1. Enter your email.
